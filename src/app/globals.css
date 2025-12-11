@@ -1,42 +1,280 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* app/globals.css */
+
+/* Tailwind v4 core */
+@import "tailwindcss";
+/* Animations plugin (v4-style) */
+@import "tw-animate-css";
+
+/* Dark variant using .dark on html/body (Tailwind v4 docs pattern) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* =========================
+   Theme: fonts & base tokens
+   ========================= */
+@theme {
+  /* Fonts are wired to next/font variables */
+  --font-sans: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-heading: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-alt: var(--font-poppins), system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom utilities for heading / alt fonts */
+@utility font-heading {
+  font-family: var(--font-heading);
+}
+
+@utility font-alt {
+  font-family: var(--font-alt);
+}
+
+/* Map core design tokens -> Tailwind color tokens
+   so classes like bg-background, text-foreground, border-border, etc. work */
+@theme inline {
+  /* Radii */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Colors (used by Tailwind utilities) */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Extra tokens for charts / sidebar */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* =========================
+   Light theme token values
+   ========================= */
+:root {
+  --radius: 0.625rem;
+
+  /* Base */
+  --background: #ffffff;
+  --foreground: #000000;
+
+  /* Surfaces */
+  --card: #ffffff;
+  --card-foreground: #000000;
+
+  --popover: #ffffff;
+  --popover-foreground: #000000;
+
+  /* Brand */
+  --primary: #ff8000;              /* main brand color */
+  --primary-foreground: #000000;   /* text on primary */
+
+  --secondary: #000000;            /* secondary in light theme */
+  --secondary-foreground: #ffffff;
+
+  /* Muted / accent */
+  --muted: #f3f4f6;                /* light gray */
+  --muted-foreground: #4b5563;     /* darker gray text */
+
+  --accent: #fff7ed;               /* soft orange tint */
+  --accent-foreground: #7c2d12;
+
+  /* Destructive */
+  --destructive: #ef4444;
+
+  /* Borders / inputs / focus ring */
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #ff8000;                 /* brand-colored ring */
+
+  /* Charts */
+  --chart-1: #ff8000;
+  --chart-2: #2563eb;
+  --chart-3: #16a34a;
+  --chart-4: #9333ea;
+  --chart-5: #f97316;
+
+  /* Sidebar */
+  --sidebar: #ffffff;
+  --sidebar-foreground: #000000;
+  --sidebar-primary: #ff8000;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #f3f4f6;
+  --sidebar-accent-foreground: #111827;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: #ff8000;
+}
+
+/* =========================
+   Dark theme token values
+   (triggered by <html class="dark"> from next-themes)
+   ========================= */
+.dark {
+  /* Base */
+  --background: #000000;
+  --foreground: #ffffff;
+
+  /* Surfaces */
+  --card: #050505;
+  --card-foreground: #ffffff;
+
+  --popover: #050505;
+  --popover-foreground: #ffffff;
+
+  /* Brand */
+  --primary: #ff8000;
+  --primary-foreground: #000000; /* text on primary */
+
+  --secondary: #ffffff;          /* secondary in dark theme */
+  --secondary-foreground: #000000;
+
+  /* Muted / accent */
+  --muted: #111827;
+  --muted-foreground: #9ca3af;
+
+  --accent: #111827;
+  --accent-foreground: #f9fafb;
+
+  /* Destructive */
+  --destructive: #ef4444;
+
+  /* Borders / inputs / focus ring */
+  --border: #1f2937;
+  --input: #1f2937;
+  --ring: #ff8000;
+
+  /* Charts */
+  --chart-1: #ff8000;
+  --chart-2: #60a5fa;
+  --chart-3: #34d399;
+  --chart-4: #c4b5fd;
+  --chart-5: #fed7aa;
+
+  /* Sidebar */
+  --sidebar: #020617;
+  --sidebar-foreground: #e5e7eb;
+  --sidebar-primary: #ff8000;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #111827;
+  --sidebar-accent-foreground: #e5e7eb;
+  --sidebar-border: #1f2937;
+  --sidebar-ring: #ff8000;
+}
+
+/* =========================
+   Base styles
+   ========================= */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100vh;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading font-semibold tracking-tight;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+
+  /* Apply border + outline tokens only to interactive elements */
+  :where(button, input, textarea, select, a) {
+    @apply border-border;
+  }
+
+  :where(button, input, textarea, select, a) {
+    @apply outline-ring/50;
+  }
+
+  ::selection {
+    @apply bg-primary text-primary-foreground;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+/* Hide scrollbar but keep scroll behavior */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+/* =========================
+   Shared components / utilities
+   ========================= */
+@layer components {
+  /* Section wrapper pattern for landing sections */
+  .page-section {
+    @apply w-full py-16 md:py-24 px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-inner {
+    @apply mx-auto max-w-6xl;
+  }
+
+  /* Card helper */
+  .card {
+    @apply rounded-xl border bg-card text-card-foreground shadow-sm;
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
+/* Reduced motion: disable smooth scroll */
+@media (prefers-reduced-motion: reduce) {
   html {
-    color-scheme: dark;
+    scroll-behavior: auto;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }

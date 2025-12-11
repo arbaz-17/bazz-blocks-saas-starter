@@ -1,0 +1,27 @@
+/* src/styles/logo-strip.css */
+
+/* Default duration, can be overridden via inline style */
+:root {
+  --logo-marquee-duration: 25s;
+}
+
+.animate-infinite-scroll {
+  animation: logo-infinite-scroll var(--logo-marquee-duration) linear infinite;
+}
+
+/* Core marquee animation */
+@keyframes logo-infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Respect prefers-reduced-motion: stop the auto-scroll */
+@media (prefers-reduced-motion: reduce) {
+  .animate-infinite-scroll {
+    animation: none;
+  }
+}
