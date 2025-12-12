@@ -140,24 +140,24 @@ See the `LICENSE` file for full details.
 
 ### 1) Clone the repository
 - git clone https://github.com/arbaz-17/bazz-blocks-saas-starter.git
-- cd bazz-blocks-saas-starter ```bash
+- cd bazz-blocks-saas-starter
 
 ### 2) Install dependencies
 -npm install
-# or
+or
 -pnpm install
-# or
+or
 -yarn
-# or
+or
 -bun install
 
 ### 3) Run the dev server
 -npm run dev
-# or
+or
 -pnpm dev
-# or
+or
 -yarn dev
-# or
+or
 -bun dev
 
 Open: http://localhost:3000
