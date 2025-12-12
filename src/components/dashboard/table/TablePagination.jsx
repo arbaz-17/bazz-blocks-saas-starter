@@ -1,4 +1,4 @@
-// src/components/data-table/TablePagination.jsx
+
 "use client";
 
 import * as React from "react";

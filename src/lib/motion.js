@@ -1,11 +1,10 @@
 export const viewportConfig = {
   once: true,
-  amount: 0.2, // how much of the element must be visible to trigger
+  amount: 0.2,
 };
 
 /**
  * Basic fade-in with no vertical movement.
- * Good for headlines, section headers, simple elements.
  */
 export const fadeIn = {
   hidden: { opacity: 0 },
@@ -20,7 +19,6 @@ export const fadeIn = {
 
 /**
  * Fade-in + slight upward motion.
- * Great for cards, list items, feature blocks, etc.
  */
 export const fadeInUp = {
   hidden: { opacity: 0, y: 16 },
@@ -36,7 +34,6 @@ export const fadeInUp = {
 
 /**
  * Staggered children inside a section or container.
- * Use on a parent <motion.div> or <motion.section>.
  */
 export const staggerContainer = {
   hidden: {},
@@ -50,7 +47,6 @@ export const staggerContainer = {
 
 /**
  * Default motion props we can spread onto motion components.
- * This keeps our components cleaner.
  */
 export const defaultMotionProps = {
   initial: "hidden",

@@ -1,4 +1,4 @@
-// src/components/marketing/testimonials/TestimonialsBase.jsx
+
 "use client";
 
 import React, { useCallback, useEffect, useState } from "react";

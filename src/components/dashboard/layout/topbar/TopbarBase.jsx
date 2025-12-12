@@ -11,8 +11,8 @@ import { TopbarNotificationsButtonBase } from "./TopbarNotificationsButtonBase";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
 
 /**
- * TopbarBase (Free)
- * - Pinned by DashboardShellBase (not sticky here)
+ * TopbarBase
+ * - Pinned by DashboardShellBase
  *
  * Props:
  * - breadcrumbsItems?: {label, href?}[]

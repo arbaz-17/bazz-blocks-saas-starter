@@ -1,4 +1,3 @@
-// src/config/landing-page.js
 
 export const aboutSectionConfig = {
   id: "about",

@@ -1,4 +1,4 @@
-// src/components/marketing/pricing/PricingBase.jsx
+
 "use client";
 
 import React from "react";
@@ -31,7 +31,7 @@ const cardVariants = {
 };
 
 /**
- * PricingBase – simple 2–3 plan pricing grid.
+ * PricingBase
  *
  * Plan shape:
  * {
@@ -50,6 +50,7 @@ const cardVariants = {
  *   highlightLabel?: string;     // e.g. "Most popular"
  * }
  */
+
 export function PricingBase({
   id,
   eyebrow,

@@ -104,7 +104,6 @@ export const customersFilters = [
 ];
 
 
-// src/data/customersData.js
 export const customersData = [
   {
     name: "John Carter",

@@ -1,4 +1,4 @@
-// src/config/landing-page.js
+
 import { Activity, Code2, Rocket } from "lucide-react";
 
 export const statsRowSectionConfig = {

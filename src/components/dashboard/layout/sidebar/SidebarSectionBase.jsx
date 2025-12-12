@@ -1,4 +1,4 @@
-// src/components/dashboard/sidebar/SidebarSectionBase.jsx
+
 "use client";
 
 import { cn } from "@/lib/utils";

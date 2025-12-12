@@ -1,4 +1,4 @@
-// src/config/landing-page.js
+
 
 export const faqSectionConfig = {
   id: "faq",

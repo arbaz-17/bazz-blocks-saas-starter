@@ -1,4 +1,4 @@
-// src/components/marketing/footer/FooterBase.jsx
+
 "use client";
 
 import React from "react";

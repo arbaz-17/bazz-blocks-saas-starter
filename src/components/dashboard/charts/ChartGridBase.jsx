@@ -1,4 +1,4 @@
-// src/components/analytics/charts/ChartGridBase.jsx
+
 "use client";
 
 import React from "react";
@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const PRESETS = {
-  // good defaults for dashboards
+
   default: "grid-cols-1 md:grid-cols-2 xl:grid-cols-3",
   twoCol: "grid-cols-1 md:grid-cols-2",
   oneCol: "grid-cols-1",

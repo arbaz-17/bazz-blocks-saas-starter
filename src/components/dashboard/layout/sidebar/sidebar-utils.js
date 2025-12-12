@@ -1,4 +1,4 @@
-// src/components/dashboard/sidebar/sidebar-utils.js
+
 
 export function badgeToneClasses(tone = "neutral") {
   switch (tone) {

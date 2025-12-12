@@ -1,10 +1,7 @@
-// src/components/dashboard/layout/DashboardBreadcrumbs.jsx
+
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-/**
- * items: Array<{ label: string; href?: string }>
- */
 export function DashboardBreadcrumbs({ items = [], className }) {
   if (!items.length) return null;
 

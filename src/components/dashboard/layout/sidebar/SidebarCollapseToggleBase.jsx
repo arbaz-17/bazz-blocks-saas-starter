@@ -1,4 +1,4 @@
-// src/components/dashboard/sidebar/SidebarCollapseToggleBase.jsx
+
 "use client";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";

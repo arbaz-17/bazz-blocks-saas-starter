@@ -1,4 +1,4 @@
-// src/config/landing-page.js
+
 import Image from "next/image";
 
 export const footerSectionConfig = {

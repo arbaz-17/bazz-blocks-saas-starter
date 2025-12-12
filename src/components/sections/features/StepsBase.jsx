@@ -1,4 +1,4 @@
-// src/components/marketing/features/StepsBase.jsx
+
 "use client";
 
 import React from "react";

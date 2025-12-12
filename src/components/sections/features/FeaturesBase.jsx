@@ -1,4 +1,4 @@
-// src/components/marketing/features/FeaturesBase.jsx
+
 "use client";
 
 import React from "react";

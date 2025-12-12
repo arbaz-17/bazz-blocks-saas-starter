@@ -1,4 +1,4 @@
-// src/components/dashboard/layout/PageHeader.jsx
+
 import { cn } from "@/lib/utils";
 import { DashboardBreadcrumbs } from "./DashboardBreadcrumbsBase";
 

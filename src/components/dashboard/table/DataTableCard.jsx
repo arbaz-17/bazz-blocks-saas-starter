@@ -1,4 +1,4 @@
-// src/components/data-table/DataTableCard.jsx
+
 "use client";
 
 import React from "react";

@@ -4,7 +4,7 @@ export const heroSectionConfig = {
   align: "center",
   background: {
     type: "image",
-    imageSrc: "/images/hero-bg.png", // public/images/hero-image.svg
+    imageSrc: "/images/hero-bg.png",
     imageAlt: "Bazz Blocks hero background",
     imagePosition: "center",
     overlay: "auto", // "dark" | "light" | "none" | "auto"

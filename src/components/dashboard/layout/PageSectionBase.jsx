@@ -1,4 +1,4 @@
-// src/components/dashboard/layout/PageSection.jsx
+
 import { cn } from "@/lib/utils";
 
 /**

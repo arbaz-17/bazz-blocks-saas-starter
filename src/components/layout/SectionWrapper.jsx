@@ -1,4 +1,4 @@
-// components/marketing/layout/SectionWrapper.jsx
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -33,7 +33,7 @@ export function SectionWrapper({
   as = "section",
   children,
 }) {
-  // Choose the underlying element (section, div, etc.)
+  // Choose the underlying element
   const Tag = as;
   const MotionTag = motion[as];
 
@@ -44,7 +44,7 @@ export function SectionWrapper({
 
   const innerClasses = cn("section-inner", maxWidth);
 
-  // Animated version (uses our shared motion presets)
+  // Animated version
   if (animateIn) {
     return (
       <MotionTag
@@ -58,7 +58,7 @@ export function SectionWrapper({
     );
   }
 
-  // Static version (no motion – cheaper and good for simple layouts)
+  // Static version
   return (
     <Tag id={id} className={outerClasses}>
       <div className={innerClasses}>{children}</div>

@@ -1,4 +1,4 @@
-// components/marketing/navbar/NavbarBase.jsx
+
 "use client";
 
 import Link from "next/link";

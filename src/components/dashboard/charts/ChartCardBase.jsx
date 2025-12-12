@@ -1,4 +1,4 @@
-// src/components/analytics/charts/ChartCardBase.jsx
+
 "use client";
 
 import React from "react";

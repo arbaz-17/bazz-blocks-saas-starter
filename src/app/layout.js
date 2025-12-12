@@ -1,4 +1,4 @@
-// app/layout.js
+
 import "./globals.css";
 import "../styles/logo-marquee.css"
 import Image from "next/image";
@@ -11,7 +11,7 @@ import { Inter, Space_Grotesk, Poppins } from "next/font/google";
 
 export const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // multiple weights
+  weight: ["400", "500", "600", "700"],
   variable: "--font-sans",
 });
 
@@ -29,7 +29,7 @@ export const poppins = Poppins({
 
 
 export const metadata = {
-  title: "Arbaz UI Kit – SaaS UI Library",
+  title: "Bazz Blocks SaaS Starter Template",
   description:
     "Config-driven SaaS UI components for Next.js built with Tailwind, shadcn/ui, and Framer Motion.",
 };

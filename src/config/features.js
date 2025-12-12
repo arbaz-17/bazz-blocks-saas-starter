@@ -1,4 +1,4 @@
-// src/config/landing-page.js
+
 
 export const featuresSectionConfig = {
   id: "features",
@@ -7,7 +7,7 @@ export const featuresSectionConfig = {
   subtitle:
     "Describe each feature in a small config object—title, copy, image, CTA—and this section handles layout, responsiveness, and motion for you.",
   align: "left",
-  layout: "columns", // default for all features ("columns" | "stacked")
+  layout: "columns",
   features: [
     {
       badge: "Config-first",
@@ -54,7 +54,7 @@ export const featuresSectionConfig = {
 
 
 export const stepsSectionConfig = {
-  id: "how-it-works",
+  id: "workflow",
   eyebrow: "Explain the journey",
   title: "Turn your onboarding into a clear, 3-step story",
   subtitle:

@@ -1,4 +1,4 @@
-// src/components/dashboard/sidebar/SidebarBase.jsx
+
 "use client";
 
 import { useCallback, useMemo, useState } from "react";

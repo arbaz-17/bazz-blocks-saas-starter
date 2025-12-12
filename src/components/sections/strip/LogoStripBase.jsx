@@ -1,4 +1,4 @@
-// src/components/marketing/logos/LogoStripBase.jsx
+
 "use client";
 
 import React from "react";
@@ -28,6 +28,7 @@ const SPEED_MAP = {
  * - speed?: "slow" | "normal" | "fast"
  * - className?: string
  */
+
 export function LogoStripBase({
   id,
   eyebrow,

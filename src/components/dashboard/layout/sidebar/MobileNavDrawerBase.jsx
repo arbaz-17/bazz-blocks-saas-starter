@@ -1,4 +1,4 @@
-// src/components/dashboard/sidebar/MobileNavDrawerBase.jsx
+
 "use client";
 
 import Link from "next/link";

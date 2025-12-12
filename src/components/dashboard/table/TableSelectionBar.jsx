@@ -1,4 +1,4 @@
-// src/components/data-table/TableSelectionBar.jsx
+
 "use client";
 
 import React from "react";

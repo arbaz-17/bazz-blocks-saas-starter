@@ -1,4 +1,4 @@
-// src/components/marketing/about/AboutBase.jsx
+
 "use client";
 
 import React from "react";
@@ -36,20 +36,7 @@ const cardVariants = {
   },
 };
 
-/**
- * @typedef {Object} PersonCard
- * @property {string|number} [id]
- * @property {string} name
- * @property {string} role
- * @property {string} imageSrc
- * @property {string} [imageAlt]
- * @property {string} [linkedinUrl]
- * @property {string} [socialLabel]
- */
 
-/**
- * AboutBase – simple “meet the maker / team” portrait row.
- */
 export function AboutBase({
   id,
   eyebrow,

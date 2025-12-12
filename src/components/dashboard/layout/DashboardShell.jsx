@@ -1,4 +1,4 @@
-// src/components/dashboard/layout/DashboardShellBase.jsx
+
 import { cn } from "@/lib/utils";
 import { PageContainer } from "./PageContainer";
 
@@ -6,7 +6,7 @@ export function DashboardShellBase({
   sidebar,
   topbar,
   children,
-  maxWidth = "max-w-none",   // 👈 important (see point #2)
+  maxWidth = "max-w-none", 
   padded = true,
   className,
   contentClassName,

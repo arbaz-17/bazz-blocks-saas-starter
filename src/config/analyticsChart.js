@@ -1,6 +1,6 @@
-// src/config/analyticsCharts.js
 
-// AREA: Revenue vs Expenses vs Profit (12 months)
+
+// AREA
 export const revenueTrendConfig = {
   revenue: { label: "Revenue", color: "var(--chart-1)" },
   expenses: { label: "Expenses", color: "var(--chart-2)" },
@@ -22,7 +22,7 @@ export const revenueTrendData = [
   { month: "December", revenue: 19580, expenses: 11200, profit: 8380 },
 ];
 
-// BAR: Signups by channel (12 months)
+// BAR
 export const signupsByChannelConfig = {
   organic: { label: "Organic", color: "var(--chart-1)" },
   ads: { label: "Paid Ads", color: "var(--chart-4)" },
@@ -44,7 +44,7 @@ export const signupsByChannelData = [
   { month: "December", organic: 900, ads: 520, referrals: 300 },
 ];
 
-// RADIAL (stacked gauge style): Plan mix (single row)
+// RADIAL
 export const planMixConfig = {
   starter: { label: "Starter", color: "var(--chart-2)" },
   pro: { label: "Pro", color: "var(--chart-1)" },

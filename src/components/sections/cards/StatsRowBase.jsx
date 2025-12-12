@@ -154,12 +154,6 @@ function StatCard({ stat, cardAlign = "left", animateValues }) {
   );
 }
 
-/**
- * StatsRowBase
- *
- * Simple KPI row with animated numbers.
- * Each stat is a small config object; the layout and styling are handled for you.
- */
 export function StatsRowBase({
   id,
   eyebrow,

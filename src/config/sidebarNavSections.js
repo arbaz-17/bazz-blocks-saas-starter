@@ -1,4 +1,4 @@
-// src/config/sidebarNavSections.js
+
 import {
   LayoutDashboard,
   BarChart3,
@@ -12,12 +12,6 @@ import {
   LifeBuoy,
 } from "lucide-react";
 
-/**
- * SidebarNavSections
- *
- * Config-only, no app-specific copy – tweak labels/paths as needed.
- * Works with Sidebar / MobileNavDrawer types we defined earlier.
- */
 export const sidebarNavSections = [
   {
     id: "main",
@@ -34,7 +28,6 @@ export const sidebarNavSections = [
         id: "analytics",
         label: "Analytics",
         icon: <BarChart3 className="h-4 w-4" aria-hidden="true" />,
-        // 🔽 nested children
         children: [
           {
             id: "analytics-overview",

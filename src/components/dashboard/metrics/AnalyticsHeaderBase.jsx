@@ -1,4 +1,4 @@
-// src/components/analytics/AnalyticsHeaderBase.jsx
+
 "use client";
 
 import React from "react";

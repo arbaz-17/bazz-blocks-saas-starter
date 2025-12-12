@@ -1,4 +1,4 @@
-// src/components/dashboard/layout/UserMenu.jsx
+
 "use client";
 
 import Link from "next/link";

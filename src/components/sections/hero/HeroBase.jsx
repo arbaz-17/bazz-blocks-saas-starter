@@ -1,4 +1,3 @@
-// components/marketing/hero/HeroBase.jsx
 "use client";
 
 import Image from "next/image";
@@ -114,21 +113,18 @@ export function HeroBase({
                     imagePosition === "center" && "object-center"
                   )}
                 />
-              {overlay !== "none" && (
-  <div
-    className={cn(
-      "absolute inset-0",
-      // explicit modes if you ever want them
-      overlay === "dark" && "bg-black/60",
-      overlay === "light" && "bg-white/70",
-      // auto = use themed background color with medium opacity
-      overlay === "auto" && "bg-background/50"
-    )}
-  />
-)}
+                {overlay !== "none" && (
+                  <div
+                    className={cn(
+                      "absolute inset-0",
 
+                      overlay === "dark" && "bg-black/60",
+                      overlay === "light" && "bg-white/70",
 
-
+                      overlay === "auto" && "bg-background/50"
+                    )}
+                  />
+                )}
               </>
             )}
 
@@ -152,7 +148,6 @@ export function HeroBase({
             )}
 
             <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-background/5 pointer-events-none" />
-
           </>
         )}
       </div>
@@ -205,9 +200,7 @@ export function HeroBase({
 
                   {secondaryCta && (
                     <Button asChild size="lg" variant="outline">
-                      <Link href={secondaryCta.href}>
-                        {secondaryCta.label}
-                      </Link>
+                      <Link href={secondaryCta.href}>{secondaryCta.label}</Link>
                     </Button>
                   )}
                 </div>
@@ -253,7 +246,6 @@ export function HeroBase({
             </Item>
           </Inner>
         ) : (
-          // overlay-center / overlay-right variants
           <Inner
             className={cn(
               "flex min-h-[70vh] flex-col justify-center",
@@ -314,9 +306,7 @@ export function HeroBase({
 
                   {secondaryCta && (
                     <Button asChild size="lg" variant="outline">
-                      <Link href={secondaryCta.href}>
-                        {secondaryCta.label}
-                      </Link>
+                      <Link href={secondaryCta.href}>{secondaryCta.label}</Link>
                     </Button>
                   )}
                 </div>

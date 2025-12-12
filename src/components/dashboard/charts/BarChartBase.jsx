@@ -1,4 +1,4 @@
-// src/components/analytics/charts/recharts/BarChartBase.jsx
+
 "use client";
 
 import * as React from "react";

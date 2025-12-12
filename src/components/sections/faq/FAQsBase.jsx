@@ -1,4 +1,4 @@
-// src/components/marketing/faq/FAQBase.jsx
+
 "use client";
 
 import React from "react";
@@ -33,9 +33,7 @@ const itemVariants = {
   },
 };
 
-/**
- * faqs: Array<{ id?: string | number; question: string; answer: string | React.ReactNode }>
- */
+
 export function FAQBase({
   id,
   eyebrow,
