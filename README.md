@@ -143,21 +143,21 @@ See the `LICENSE` file for full details.
 - cd bazz-blocks-saas-starter
 
 ### 2) Install dependencies
--npm install
+npm install
 or
--pnpm install
+pnpm install
 or
--yarn
+yarn
 or
--bun install
+bun install
 
 ### 3) Run the dev server
--npm run dev
+npm run dev
 or
--pnpm dev
+pnpm dev
 or
--yarn dev
+yarn dev
 or
--bun dev
+bun dev
 
 Open: http://localhost:3000
