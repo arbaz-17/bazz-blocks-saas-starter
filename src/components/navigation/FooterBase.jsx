@@ -6,6 +6,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { usePathname } from "next/navigation";
 
 /**
  * FooterBase
@@ -35,6 +36,12 @@ export function FooterBase({
   newsletter,
   className,
 }) {
+    const pathname = usePathname();
+  
+      if (pathname.startsWith("/dashboard") || pathname.startsWith("/dashboard-test")) {
+      return null;
+    }
+  
   const year = new Date().getFullYear();
 
   const handleSubmit = (event) => {

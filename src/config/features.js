@@ -15,7 +15,7 @@ export const featuresSectionConfig = {
       title: "Define features as data, not JSX noise",
       description:
         "Each card is powered by a simple config object, so you can tweak titles, descriptions, and CTAs without digging through markup. Perfect for quickly iterating on your SaaS landing page.",
-      image: "/images/hero-logo.png",
+      image: "/images/bb1.png",
       mediaSide: "right",
       cta: {
         label: "See feature config",
@@ -28,7 +28,7 @@ export const featuresSectionConfig = {
       title: "Switch layouts without rewriting components",
       description:
         "Use a columns layout when you want side-by-side storytelling, or flip a single feature to stacked when you need a tall, storytelling block. All of it is controlled from the config.",
-      image: "/images/hero-logo.png",
+      image: "/images/bb2.png",
       mediaSide: "left",
       cta: {
         label: "Try stacked layout",
@@ -41,7 +41,7 @@ export const featuresSectionConfig = {
       title: "Drop into any Next.js SaaS starter",
       description:
         "Built for App Router, Tailwind, and shadcn/ui, this section plugs straight into your existing layout and plays nicely with dark mode, responsive breakpoints, and your design tokens.",
-      image: "/images/hero-logo.png",
+      image: "/images/bb3.png",
       layout: "stacked",
       cta: {
         label: "Use in your project",

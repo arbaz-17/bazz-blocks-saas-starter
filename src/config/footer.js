@@ -18,15 +18,15 @@ export const footerSectionConfig = {
   navLinks: [
     {
       label: "See the starter sections",
-      href: "#components",
+      href: "#hero",
     },
     {
       label: "Upgrade to Bazz Blocks Pro",
-      href: "#bazz-blocks-pro",
+      href: "#pricing",
     },
     {
       label: "Learn about NexBolt",
-      href: "#nexbolt",
+      href: "https://nexbolt.vercel.app/",
     },
     {
       label: "Read the FAQ",

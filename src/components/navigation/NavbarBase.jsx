@@ -49,10 +49,14 @@ export function NavbarBase({
 }) {
   const pathname = usePathname();
 
+    if (pathname.startsWith("/dashboard") || pathname.startsWith("/dashboard-test")) {
+    return null;
+  }
+
   return (
     <header
       className={cn(
-        "w-full border-b border-border/60 bg-transparent backdrop-blur",
+        "w-full border-b border-border/60 bg-background/80 backdrop-blur",
         sticky && "sticky top-0 z-40",
         className
       )}

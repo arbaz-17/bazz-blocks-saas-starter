@@ -9,21 +9,21 @@ export const heroSectionConfig = {
     imagePosition: "center",
     overlay: "auto", // "dark" | "light" | "none" | "auto"
   },
-  eyebrow: "Run your SaaS faster",
-  title: "Build beautiful Landing Pages, dashboards, tables and charts in minutes.",
+  eyebrow: "Bazz Blocks SaaS Starter Free Template",
+  title: "Build Beautiful Landing Pages, Dashboards, Tables, And Charts In Minutes.",
   subtitle:
     "Bazz Blocks gives you production-ready sections for your SaaS starter so you can move from idea to launch faster.",
   primaryCta: {
     label: "Get started free",
-    href: "/signup",
+    href: "/",
   },
   secondaryCta: {
     label: "Browse components",
-    href: "/components",
+    href: "#hero",
   },
   stats: [
-    { label: "Components", value: "30+" },
-    { label: "Starter downloads", value: "500+" },
+    { label: "Components", value: "40+" },
+    { label: "Starter downloads", value: "100+" },
   ],
 };
 

@@ -2,47 +2,53 @@
 
 export const faqSectionConfig = {
   id: "faq",
-  eyebrow: "Questions from other builders",
-  title: "Everything you’re probably wondering already",
+  eyebrow: "FAQs For SaaS Builders",
+  title: "Quick Answers Before You Ship",
   subtitle:
-    "Use this FAQ block to explain how the free Bazz Blocks SaaS Starter, Bazz Blocks Pro, and NexBolt fit together in your stack.",
+    "This starter is a solid baseline. Bazz Blocks Pro unlocks the full UI system, and NexBolt adds the backend foundation.",
   align: "left",
   faqs: [
     {
       id: "what-is-starter",
-      question: "What exactly is the Bazz Blocks SaaS Starter?",
+      question: "What Is Included In The Free Bazz Blocks Starter?",
       answer:
-        "It’s a free, stripped-down version of my internal UI system: opinionated sections like navbar, hero, features, pricing, testimonials, FAQ and more. Everything is config-driven and built for Next.js + Tailwind + ShadCN, so you can wire real content instead of hand-rolling layout every time.",
+        "A polished starter with one ready-made version of each core marketing section plus a simple dashboard (KPIs, basic charts, and a demo table). It’s config-driven, so you can launch fast without rebuilding layouts from scratch.",
     },
     {
-      id: "difference-pro",
-      question: "How is Bazz Blocks Pro different from the free starter?",
+      id: "why-pro",
+      question: "Why Upgrade To Bazz Blocks Pro?",
       answer:
-        "The starter gives you a solid tip of the iceberg: one clean variant per section. Bazz Blocks Pro adds multiple layouts, advanced props, dashboard shells, CRUD table kits, analytics views, and much deeper configuration for production SaaS dashboards and marketing sites.",
+        "Pro turns the starter into a full UI toolkit: multiple variants per section, deeper configuration, better dashboard building blocks, upgraded CRUD table patterns, and more chart options—so your product can scale without a UI rewrite.",
+    },
+    {
+      id: "what-you-get-pro",
+      question: "What’s The Biggest Difference You’ll Feel With Pro?",
+      answer:
+        "Speed and flexibility. Instead of being limited to one layout per section, you can swap variants, fine-tune structure, and ship new pages and dashboards by changing config—while keeping everything consistent.",
     },
     {
       id: "where-nexbolt-fits",
-      question: "Where does NexBolt fit into all of this?",
+      question: "What Is NexBolt And When Do I Need It?",
       answer:
-        "Bazz Blocks focuses on the UI layer. NexBolt is a full Next.js boilerplate that ships with auth, routing, API patterns, and a database-ready backend. You can use the SaaS Starter on any project, or combine Bazz Blocks Pro + NexBolt to go from idea to real SaaS in days instead of weeks.",
+        "NexBolt is the full SaaS boilerplate: auth, multi-tenancy, billing hooks, database-ready backend, APIs, and integrations. If you want the UI and the backend foundation pre-wired, NexBolt is the fastest path.",
     },
     {
-      id: "client-work",
-      question: "Can I use the SaaS Starter for client projects?",
+      id: "use-cases",
+      question: "Who Is The Free Starter Best For?",
       answer:
-        "Yes. The free starter is perfect for agencies and freelancers who need a clean, modern SaaS layout fast. You keep full control of the codebase, can customize the sections, and upgrade to Pro later if you want deeper navigation, tables, or analytics components.",
+        "Builders validating an idea, freelancers shipping a quick MVP, and teams who want a clean baseline. When you’re ready for more layouts, richer dashboards, and reusable patterns across products, Pro makes the jump painless.",
     },
     {
-      id: "stack-lockin",
-      question: "Am I locked into a special design system or theme?",
+      id: "licensing",
+      question: "Can I Use This For Client Work Or Commercial Projects?",
       answer:
-        "No. Everything is built on plain Tailwind, ShadCN, and Framer Motion. The starter is deliberately minimal so you can drop it into an existing design system or evolve it into your own, without fighting hidden theme layers or magic CSS.",
+        "Yes—use the starter to build and ship. If you’re building multiple client projects or want higher-leverage components (tables, dashboards, variants), upgrading to Pro saves time on every delivery.",
     },
     {
-      id: "next-steps",
-      question: "What’s the fastest way to see this FAQ in my own project?",
+      id: "getting-started",
+      question: "How Do I Customize This FAQ Fast?",
       answer:
-        "Clone the starter, update this FAQ config with your own questions about pricing, onboarding, or product limits, and drop the <FAQBase /> section near the end of your landing page. You’ll have a real, trust-building FAQ in minutes.",
+        "Edit the questions and answers in this config file and your FAQ updates instantly. Start with pricing, product limits, and what’s included—then tailor it to your audience in a few minutes.",
     },
   ],
 };

@@ -10,40 +10,40 @@ export const aboutSectionConfig = {
   people: [
     {
       id: "systems-architect",
-      name: "Systems Architect",
+      name: "John Doe",
       role:
-        "Turns messy layouts into reusable sections and patterns – the backbone of Bazz Blocks.",
-      imageSrc: "/person/p1.jpg",
+        "System Architecture",
+      imageSrc: "/person/p-1.jpg",
       imageAlt: "Portrait of the systems architect behind the components",
       linkedinUrl: "https://linkedin.com",
       socialLabel: "View the systems architect on LinkedIn",
     },
     {
       id: "product-designer",
-      name: "Product Designer",
+      name: "Emily Johnson",
       role:
-        "Designs clean, SaaS-native defaults so your About section looks believable before you change a single line.",
-      imageSrc: "/person/p1.jpg",
+        "Product Designer",
+      imageSrc: "/person/p4.jpg",
       imageAlt: "Portrait of the product designer",
       linkedinUrl: "https://linkedin.com",
       socialLabel: "View the product designer on LinkedIn",
     },
     {
       id: "fullstack-engineer",
-      name: "Full-stack Engineer",
+      name: "Michael Brown",
       role:
-        "Connects NexBolt’s backend with Bazz Blocks UI so this section works in a real Next.js app, not just a Dribbble shot.",
-      imageSrc: "/person/p1.jpg",
+        "Full-Stack Engineer",
+      imageSrc: "/person/p2.jpg",
       imageAlt: "Portrait of the full-stack engineer",
       linkedinUrl: "https://linkedin.com",
       socialLabel: "View the full-stack engineer on LinkedIn",
     },
     {
       id: "dx-writer",
-      name: "DX & Docs",
+      name: "Daniel Wilson",
       role:
-        "Writes the copy and examples that explain how to wire this About block from a simple config object.",
-      imageSrc: "/person/p1.jpg",
+        "DX & Docs",
+      imageSrc: "/person/p3.jpg",
       imageAlt: "Portrait of the DX and documentation specialist",
       linkedinUrl: "https://linkedin.com",
       socialLabel: "View the DX specialist on LinkedIn",

@@ -1,35 +1,31 @@
 export const navItems = [
   {
-    label: "Product",
+    label: "Components",
     href: "/product",
-    children: [
-      {
-        label: "Overview",
-        href: "/product",
-        description: "See how it works",
-      },
-      {
-        label: "Pricing",
-        href: "/pricing",
-        description: "Simple plans for growing teams",
-      },
-    ],
+   children: [
+  { label: "Hero", href: "#hero", description: "First impression & value" },
+  { label: "Marquee", href: "#tech-logos", description: "Partners & Collaborators" },
+  { label: "Stats", href: "#kpis", description: "Key numbers at glance" },
+  { label: "Features", href: "#features", description: "What you get" },
+  { label: "Workflow", href: "#workflow", description: "How it works" },
+  { label: "Pricing", href: "#pricing", description: "Plans & costs" },
+  { label: "Testimonials", href: "#testimonials", description: "Customer love & proof" },
+  { label: "About Us", href: "#about", description: "Who we are" },
+  { label: "FAQs", href: "#faq", description: "Quick answers" },
+]
+,
   },
   {
-    label: "Resources",
-    href: "/resources",
-    children: [
-      { label: "Blog", href: "/blog" },
-      { label: "Docs", href: "/docs" },
-    ],
+    label: "Dashboard",
+    href: "/dashboard",
   },
   {
-    label: "Customers",
-    href: "/customers",
+    label: "Charts",
+    href: "/dashboard/analytics",
   },
 ];
 
 export const cta = {
   label: "Get started",
-  href: "/signup",
+  href: "/",
 };
