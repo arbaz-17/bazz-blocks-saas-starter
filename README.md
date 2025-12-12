@@ -136,3 +136,31 @@ This project is licensed under the **MIT License** — you’re free to use, mod
 See the `LICENSE` file for full details.
 
 
+## Getting started
+
+### 1) Clone the repository
+
+```bash
+git clone https://github.com/arbaz-17/bazz-blocks-saas-starter.git
+cd bazz-blocks-saas-starter
+2) Install dependencies
+bash
+Copy code
+npm install
+# or
+pnpm install
+# or
+yarn
+# or
+bun install
+3) Run the dev server
+bash
+Copy code
+npm run dev
+# or
+pnpm dev
+# or
+yarn dev
+# or
+bun dev
+Open: http://localhost:3000
