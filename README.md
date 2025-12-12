@@ -85,16 +85,6 @@ If you like the direction of this starter, **star the repo** to follow updates a
 
 Built with a modern, production-friendly stack:
 
-- **Next.js (App Router)**
-- **React**
-- **Tailwind CSS v4**
-- **shadcn/ui**
-- **Framer Motion**
-- **Recharts**
-- **Vercel (deployment)**
-
-### Stack icons
-
 ![Next.js](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=fff)
 ![React](https://img.shields.io/badge/React-000?logo=react&logoColor=61DAFB)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-000?logo=tailwindcss&logoColor=38BDF8)
