@@ -2,6 +2,31 @@
   "name": "bazz-blocks-saas-starter",
   "version": "0.1.0",
   "private": true,
+   "description": "Free Next.js SaaS starter kit with a marketing site + dashboard (CRUD table, KPIs & charts). Built with Tailwind v4, shadcn/ui, Framer Motion, and Recharts.",
+  "author": "Arbaz Ahmad",
+  "license": "MIT",
+  "homepage": "https://bazz-blocks-saas-starter.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arbaz-17/bazz-blocks-saas-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arbaz-17/bazz-blocks-saas-starter/issues"
+  },
+  "keywords": [
+    "nextjs",
+    "saas",
+    "starter",
+    "tailwind",
+    "shadcn-ui",
+    "dashboard",
+    "crud",
+    "data-table",
+    "recharts",
+    "framer-motion",
+    "template"
+  ]
+},
   "scripts": {
     "dev": "next dev",
     "build": "next build",
