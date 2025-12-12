@@ -96,17 +96,18 @@ Built with a modern, production-friendly stack:
 
 ## How the “config-driven” approach works
 
-Instead of hardcoding copy and UI content inside components, most sections in this starter are driven by **simple config objects**.
+Most sections in this starter are powered by **simple config objects** (for content + structure), while the components themselves are built to be **highly customizable via props**.
 
 That means you can:
-- update headings, subtitles, buttons, links, and lists in one place
-- reuse the same section component across pages
-- keep components clean, reusable, and content-agnostic
+- update headings, subtitles, CTAs, links, and lists from config
+- control layout and styling through props (spacing, alignment, variants, visibility, etc.)
+- keep components **content-agnostic**, reusable, and easy to extend
 
 **Typical flow:**
 1. Open the relevant config file (e.g. `config/marketing/*` or `config/dashboard/*`)
 2. Edit the object (text, CTAs, items, chart data, etc.)
-3. The UI updates automatically — no deep JSX editing required
+3. Pass optional props to fine-tune the UI when needed
+4. The UI updates instantly — without rewriting the section JSX
 
 
 ## Contributing
