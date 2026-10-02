@@ -239,7 +239,7 @@ function MobileNavBase({ items, cta, pathname }) {
                     key={item.label}
                     type="single"
                     collapsible
-                    className="rounded-lg border border-border/60 bg-card/80 px-2"
+                    className="rounded-lg border border-border/60 bg-card/80 px-3"
                   >
                     <AccordionItem value={item.label}>
                       <AccordionTrigger className="text-sm font-medium text-foreground">
@@ -256,7 +256,7 @@ function MobileNavBase({ items, cta, pathname }) {
                               }
                               className={cn(
                                 "block rounded-md px-2 py-1 text-sm",
-                                "text-muted-foreground hover:text-foreground hover:bg-accent/70"
+                                "text-muted-foreground hover:text-foreground hover:bg-accent/50"
                               )}
                             >
                               {child.label}
@@ -277,7 +277,7 @@ function MobileNavBase({ items, cta, pathname }) {
                     rel={item.external ? "noreferrer" : undefined}
                     className={cn(
                       "block rounded-md px-3 py-2 text-sm font-medium",
-                      "text-muted-foreground hover:text-foreground hover:bg-accent/70",
+                      "text-muted-foreground hover:text-foreground hover:bg-accent/80",
                       isActive && "text-foreground"
                     )}
                   >
@@ -290,7 +290,7 @@ function MobileNavBase({ items, cta, pathname }) {
         ) : null}
 
         {/* CTA at bottom */}
-        <div className="mt-auto space-y-2 border-t border-border/60 pt-3">
+        <div className="mt-auto space-y-2 border-t border-border/40 pt-3">
           {cta ? (
             <SheetClose asChild>
               <Button asChild className="w-full">
