@@ -23,22 +23,6 @@ import {
 } from "@/components/ui/accordion";
 import { ThemeToggle } from "../layout/ThemeToggle";
 
-/**
- * NavbarBase – simple SaaS navbar for the free starter.
- *
- * Props:
- * - logo?: ReactNode
- * - navItems?: {
- *     label: string;
- *     href?: string;
- *     external?: boolean;
- *     children?: { label: string; href?: string; external?: boolean; description?: string }[];
- *   }[]
- * - cta?: { label: string; href: string; external?: boolean }
- * - sticky?: boolean
- * - showThemeToggle?: boolean
- * - className?: string
- */
 export function NavbarBase({
   logo,
   navItems = [],
@@ -56,7 +40,7 @@ export function NavbarBase({
   return (
     <header
       className={cn(
-        "w-full border-b border-border/60 bg-background/80 backdrop-blur",
+        "w-full border-b border-border/70 bg-background/70 backdrop-blur",
         sticky && "sticky top-0 z-40",
         className
       )}
@@ -289,7 +273,7 @@ function MobileNavBase({ items, cta, pathname }) {
           </nav>
         ) : null}
 
-        {/* CTA at bottom */}
+
         <div className="mt-auto space-y-2 border-t border-border/40 pt-3">
           {cta ? (
             <SheetClose asChild>
