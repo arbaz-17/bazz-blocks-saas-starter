@@ -14,10 +14,10 @@ export function ThemeToggle({ className }) {
       className={cn(
         "inline-flex h-9 w-9 items-center justify-center rounded-full border border-border/70 bg-card/90 shadow-sm",
         "hover:bg-accent/80 hover:text-foreground transition-colors duration-150",
-        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+        "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background",
         className
       )}
-      aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+      aria-label={isDark ? "Switch to light" : "Switch to dark"}
     >
       <span className="relative flex h-4 w-4 items-center justify-center">
         {/* Sun icon for light mode */}
